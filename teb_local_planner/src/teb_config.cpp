@@ -98,6 +98,7 @@ void TebConfig::declareParameters(const nav2_util::LifecycleNode::SharedPtr nh, 
   declare_parameter_if_not_declared(nh, name + "." + "obstacle_association_cutoff_factor", rclcpp::ParameterValue(obstacles.obstacle_association_cutoff_factor));
   declare_parameter_if_not_declared(nh, name + "." + "costmap_converter_plugin", rclcpp::ParameterValue(obstacles.costmap_converter_plugin));
   declare_parameter_if_not_declared(nh, name + "." + "costmap_converter_spin_thread", rclcpp::ParameterValue(obstacles.costmap_converter_spin_thread));
+  declare_parameter_if_not_declared(nh, name + "." + "costmap_converter_rate", rclcpp::ParameterValue(obstacles.costmap_converter_rate));
   declare_parameter_if_not_declared(nh, name + "." + "obstacle_proximity_ratio_max_vel",  rclcpp::ParameterValue(obstacles.obstacle_proximity_ratio_max_vel));
   declare_parameter_if_not_declared(nh, name + "." + "obstacle_proximity_lower_bound", rclcpp::ParameterValue(obstacles.obstacle_proximity_lower_bound));
   declare_parameter_if_not_declared(nh, name + "." + "obstacle_proximity_upper_bound", rclcpp::ParameterValue(obstacles.obstacle_proximity_upper_bound));
